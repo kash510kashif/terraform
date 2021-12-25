@@ -67,6 +67,7 @@ resource "aws_route_table_association" "a" {
 }
 ###############Creating instance#############
 resource "aws_instance" "ec" {
+    vpc_id=aws_vpc.my_vpc.id
     ami = "ami-0a5899928eba2e7bd"
     instance_type = "t2.micro"
   
