@@ -3,5 +3,5 @@ Kind: Pod
  Metadata:
   Name : my-pod
  specs:
-  -name:c1
+  -name:c12
   image:ubuntu
