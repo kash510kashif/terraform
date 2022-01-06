@@ -1,0 +1,7 @@
+ApiVersion: V1
+Kind: Pod
+ Metadata:
+  Name : my-pod
+ specs:
+  -name:c1
+  image:ubuntu
