@@ -54,8 +54,8 @@ resource "aws_security_group" "sg" {
     protocol         = "-1"
     cidr_blocks      = ["0.0.0.0/0"]
     ipv6_cidr_blocks = null
-  }
-
+        }
+  
   tags = {
     Name = "allow_tls"
   }
@@ -67,7 +67,7 @@ resource "aws_route_table_association" "a" {
 }
 ###############Creating instance#############
 resource "aws_instance" "ec" {
-    vpc_id=aws_vpc.my_vpc.id
+    subnet_id=aws_subnet.my_subnet.id
     ami = "ami-0a5899928eba2e7bd"
     instance_type = "t2.micro"
   
